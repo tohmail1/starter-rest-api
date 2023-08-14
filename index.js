@@ -51,6 +51,10 @@ app.get('/:col/:key', async (req, res) => {
   res.json(item).end()
 })
 
+app.get("/", (req, res) => {
+  res.send("Hello World!");
+});
+
 // Get a full listing
 app.get('/:col', async (req, res) => {
   const col = req.params.col
