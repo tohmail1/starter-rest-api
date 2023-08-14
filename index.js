@@ -18,7 +18,7 @@ app.use(express.urlencoded({ extended: true }))
 // }
 // app.use(express.static('public', options))
 // #############################################################################
-
+/*
 // Create or Update an item
 app.post('/:col/:key', async (req, res) => {
   console.log(req.body)
@@ -51,9 +51,7 @@ app.get('/:col/:key', async (req, res) => {
   res.json(item).end()
 })
 
-app.get("/", (req, res) => {
-  res.send("Hello World!");
-});
+
 
 // Get a full listing
 app.get('/:col', async (req, res) => {
@@ -62,6 +60,11 @@ app.get('/:col', async (req, res) => {
   const items = await db.collection(col).list()
   console.log(JSON.stringify(items, null, 2))
   res.json(items).end()
+})
+*/
+
+app.get("/", (req, res) => {
+  res.send("Hello World!");
 })
 
 // Catch all handler for all other request.
